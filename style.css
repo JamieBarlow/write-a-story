@@ -20,6 +20,26 @@ body {
   input[type="radio"] {
     margin-left: 12px;
   }
+
+  input:invalid {
+    border-color: #ccc;
+  }
+
+  input:valid {
+    border-color: green;
+  }
+
+  /* Trying to work with CSS selector nesting */
+  /* input:not(form #button) {
+    border-color: #ccc;
+    & input:valid {
+      border-color: green;
+    }
+  } */
+
+  input[type="submit"] {
+    border-color: unset;
+  }
   
   #main {
     background-color: rgba(255,255,255,0.8);
